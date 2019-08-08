@@ -1,4 +1,0 @@
-Source: ros-dashing-rqt-top
-Version: 1.0.0
-Description: RQT plugin for monitoring ROS processes.
-Build-Depends:
