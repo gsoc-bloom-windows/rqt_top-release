@@ -1,20 +1,15 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ros-dashing-rqt-top</id>
-    <version>1.0.0</version>
-    <title>ros-dashing-rqt-top</title>
-    <authors>Dan Lazewatsky <dan@lazewatsky.com></authors>
+    <id>@(Package)</id>
+    <version>@(Version)</version>
+    <title>@(Package)</title>
+    <authors>@(Authors)</authors>
     <owners>OSRF</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>RQT plugin for monitoring ROS processes.</description>
+    <description>@(Description)</description>
     <dependencies>
-			<dependency id="ros-dashing-python-qt-binding" version="0.2.19"/>
-			<dependency id="ros-dashing-rclpy"/>
-			<dependency id="ros-dashing-rqt-gui"/>
-			<dependency id="ros-dashing-rqt-gui-py"/>
-			<dependency id="ros-dashing-ros-workspace"/>
-
+@[for d in Depends]@(d)@[end for]
     </dependencies>
   </metadata>
   <files>
